@@ -9,17 +9,6 @@ const stockData = require('./db/model/stockSchema');
 const port = process.env.PORT || 8000;
 const app = express();
 
-/* 
-Setting DB connection
-const DB = 'mongodb+srv://harshoswal:Harsh%40123@cluster0.xy2s3p1.mongodb.net/stockinformation?retryWrites=true&w=majority';
-
-Connecting to DB using mongoose
-mongoose.connect(DB).then(()=>{
-    console.log('db connection successful');
-}).catch((e)=>{
-    console.log(e);
-});
- */
 //Routes to all pages (Here we can use router (node js package) and controller so  set we can '/page' as default route)
 app.use(router);
 
